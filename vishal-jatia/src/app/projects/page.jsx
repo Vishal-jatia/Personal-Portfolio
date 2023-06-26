@@ -33,7 +33,7 @@ const page = () => {
           className="rounded-3xl row-span-1 relative w-full h-40 md:h-56 "
         >
           <Image
-            src="/images/projects.png"
+            src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784641/public/images/projects_buyo4s.png"
             alt="project"
             fill={true}
             className="object-cover rounded-3xl"
@@ -63,7 +63,7 @@ const page = () => {
           <div className="pt-10 border-t mb-5 mx-4 border-dotted flex flex-row justify-between items-end">
             <h1 className="text-5xl">Projects</h1>
             <Image
-              src="/images/image1.png"
+              src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784639/public/images/image1_kdiiov.png"
               alt="pic"
               width={70}
               height={70}
@@ -106,7 +106,19 @@ const page = () => {
                 </h3>
               </div>
               <p className="my-5">{project.description}</p>
-              <div>{/*Tech stack */}</div>
+              <div className="flex bg-gray-100 rounded-full justify-between py-1 px-5 max-w-[90%] mx-auto">
+                {project.techStack.map((link) => {
+                  return (
+                    <Image
+                      src={link}
+                      alt="icon"
+                      width={40}
+                      height={40}
+                      className=""
+                    />
+                  );
+                })}
+              </div>
               {project.liveLink !== "" ? (
                 <div className="flex gap-1">
                   <Link

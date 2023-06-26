@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Graph from "./Graph.jsx";
 import projects from "@/app/projects/projects.js";
 import Contact from "./contact.jsx";
+import Skills from "./skills.jsx";
 
 const zen = Zen_Dots({
   subsets: ["latin-ext"],
@@ -24,7 +25,7 @@ const HomeTiles = () => {
       "NodeJs",
       "ReactJs",
       "NextJs",
-      "Figma"
+      "Figma",
     ],
     data: [90, 90, 90, 80, 80, 85, 80, 75, 60, 90],
   };
@@ -56,7 +57,7 @@ const HomeTiles = () => {
                 className="object-cover rounded-2xl group-hover/all:scale-110 duration-300 ease-in-out"
               />
               <Image
-                src="/icons/Arrow-circle.svg"
+                src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784628/public/icons/Arrow-circle_vmqdha.svg"
                 alt="arrow"
                 width={50}
                 height={50}
@@ -70,7 +71,19 @@ const HomeTiles = () => {
               </h3>
             </div>
             <p className="my-5">{projects[0].description}</p>
-            <div>{/*Tech stack */}</div>
+            <div className="flex bg-gray-100 rounded-full justify-between py-1 px-5 max-w-[90%] mx-auto">
+              {projects[0].techStack.map((link) => {
+                return (
+                  <Image
+                    src={link}
+                    alt="icon"
+                    width={40}
+                    height={40}
+                    className=""
+                  />
+                );
+              })}
+            </div>
             <div className="flex gap-1">
               <Link
                 href={projects[0].codeLink}
@@ -79,7 +92,7 @@ const HomeTiles = () => {
                 <div className="flex w-full items-center justify-between mx-5 md:mx-10 border-b">
                   <h4>Github</h4>
                   <Image
-                    src="/icons/Arrow-circle.svg"
+                    src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784628/public/icons/Arrow-circle_vmqdha.svg"
                     alt="arrow"
                     width={30}
                     height={30}
@@ -95,7 +108,7 @@ const HomeTiles = () => {
                   <div className="flex items-center justify-between mx-5 md:mx-10 border-b mb-5">
                     <h4>Live Link</h4>
                     <Image
-                      src="/icons/Arrow-circle.svg"
+                      src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784628/public/icons/Arrow-circle_vmqdha.svg"
                       alt="arrow"
                       width={30}
                       height={30}
@@ -114,7 +127,7 @@ const HomeTiles = () => {
                       <span className="text-gray-500">(Coming Soon)</span>
                     </h4>
                     <Image
-                      src="/icons/Arrow-circle.svg"
+                      src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784628/public/icons/Arrow-circle_vmqdha.svg"
                       alt="arrow"
                       width={30}
                       height={30}
@@ -144,12 +157,20 @@ const HomeTiles = () => {
             About me
           </h3>
           <p className="text-black ml-2 border-t-2 mt-5 pt-3 border-black mx-10">
-            Hey everyone! You are visiting the official portfolio of Vishal
-            Jatia, who is a software developer from Delhi, India. Developing
-            websites has been a passion for him and has been developing since
-            2021. He is also interested in machine learning and have
-            participated in many hackathons. He is a very active learner and is
-            always on the journey to learn new technologies.
+            Welcome to the official portfolio of Vishal Jatia, a professional
+            software developer based in Delhi, India. With a passion for web
+            development, Vishal has been honing his skills in this field since
+            2021. His dedication and expertise have enabled him to create
+            engaging and dynamic websites. Beyond web development, Vishal also
+            has a keen interest in the exciting world of machine learning. He
+            has actively participated in numerous hackathons, leveraging his
+            knowledge and creativity to solve complex problems. Constantly
+            seeking growth and improvement, Vishal is an enthusiastic learner,
+            always embarking on new technological journeys.Through his
+            meticulous approach and commitment to excellence, he strives to
+            deliver innovative solutions that enhance user experiences. Thank
+            you for visiting Vishal Jatia's portfolio. Feel free to explore his
+            projects and reach out for collaboration opportunities.
           </p>
         </Link>
       </motion.div>
@@ -164,7 +185,7 @@ const HomeTiles = () => {
           delay: 0.15,
         }}
       >
-        <Link href="/" className={`text-black font-medium rounded-full mb-5 `}>
+        <Link href="/" className={`text-black font-medium rounded-full mb-5 pl-5 `}>
           <h3
             className={`border-2 border-black rounded-full px-4 inline ${zen.variable} font-zen group-hover/2:bg-white group-hover/2:text-black group-hover/2:border-white`}
           >
@@ -193,7 +214,8 @@ const HomeTiles = () => {
           <h3 className="border-2 border-black rounded-full px-4 inline group-hover/3:bg-white group-hover/3:text-black group-hover/3:border-white">
             Skills
           </h3>
-          <Graph data={data}/>
+          <Graph data={data} />
+          <Skills />
         </div>
       </motion.div>
       <motion.div
@@ -209,7 +231,9 @@ const HomeTiles = () => {
         <div
           className={`text-black font-medium rounded-full  ${zen.variable} font-zen block rounded-xl bg-black px-5 py-3 h-full text-white`}
         >
-          <h3 className="border-2  rounded-full px-4 inline group-hover/4:bg-white group-hover/4:text-black group-hover/4:border-white">Contact me</h3>
+          <h3 className="border-2  rounded-full px-4 inline group-hover/4:bg-white group-hover/4:text-black group-hover/4:border-white">
+            Contact me
+          </h3>
           <Contact />
         </div>
       </motion.div>

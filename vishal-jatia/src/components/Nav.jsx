@@ -79,7 +79,7 @@ const Nav = () => {
               style={{ originY: 0.5, originX: 0.4 }}
             >
               <Image
-                src="/icons/down-arrow.png"
+                src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784631/public/icons/down-arrow_v6iasc.png"
                 className="pr-1 my-2"
                 alt="menu"
                 width={25}
@@ -151,13 +151,13 @@ const Nav = () => {
                 </p>
               </Link>
             </div>
-            <div className="mr-5 sm:hidden flex absolute right-5 bottom-10">
+            <div className="mr-5 lg:hidden flex absolute right-5 bottom-10">
               <Link
                 href="https://www.instagram.com/v._.i_s_h_a_l/"
                 className="border rounded-full p-3 hover:scale-105"
               >
                 <Image
-                  src="/icons/instagram.svg"
+                  src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784631/public/icons/instagram_datbo1.svg"
                   width={20}
                   height={20}
                   alt="instagram"
@@ -168,7 +168,7 @@ const Nav = () => {
                 className="border rounded-full p-3 hover:scale-105"
               >
                 <Image
-                  src="/icons/github.svg"
+                  src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784637/public/icons/github_daaho9.svg"
                   width={20}
                   height={20}
                   alt="github"
@@ -179,7 +179,7 @@ const Nav = () => {
                 className="border rounded-full p-3 hover:scale-105"
               >
                 <Image
-                  src="/icons/linkedin.svg"
+                  src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784631/public/icons/linkedin_hrrwfy.svg"
                   width={20}
                   height={20}
                   alt="linkedin"
@@ -196,7 +196,7 @@ const Nav = () => {
           className="border rounded-full p-3 hover:scale-105"
         >
           <Image
-            src="/icons/instagram.svg"
+            src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784631/public/icons/instagram_datbo1.svg"
             width={20}
             height={20}
             alt="instagram"
@@ -206,14 +206,14 @@ const Nav = () => {
           href="https://github.com/Vishal-jatia"
           className="border rounded-full p-3 hover:scale-105"
         >
-          <Image src="/icons/github.svg" width={20} height={20} alt="github" />
+          <Image src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784637/public/icons/github_daaho9.svg" width={20} height={20} alt="github" />
         </Link>
         <Link
           href="https://www.linkedin.com/in/vishal-jatia-638146229/"
           className="border rounded-full p-3 hover:scale-105"
         >
           <Image
-            src="/icons/linkedin.svg"
+            src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784631/public/icons/linkedin_hrrwfy.svg"
             width={20}
             height={20}
             alt="linkedin"

@@ -14,7 +14,7 @@ const Footer = () => {
           className="border rounded-full p-3 hover:scale-105"
         >
           <Image
-            src="/icons/instagram.svg"
+            src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784631/public/icons/instagram_datbo1.svg"
             width={20}
             height={20}
             alt="instagram"
@@ -25,7 +25,7 @@ const Footer = () => {
           className="border rounded-full p-3 hover:scale-105"
         >
           <Image
-            src="/icons/github.svg"
+            src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784637/public/icons/github_daaho9.svg"
             width={20}
             height={20}
             alt="instagram"
@@ -36,7 +36,7 @@ const Footer = () => {
           className="border rounded-full p-3 hover:scale-105"
         >
           <Image
-            src="/icons/linkedin.svg"
+            src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784631/public/icons/linkedin_hrrwfy.svg"
             width={20}
             height={20}
             alt="instagram"

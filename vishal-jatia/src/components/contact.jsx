@@ -63,7 +63,7 @@ const Contact = () => {
         <div className="bg-gray-800 group-hover:bg-gray-100 group-hover:text-black rounded-full px-3  m-1 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 border border-gray-100 text-white flex gap-2 justify-center duration-1000 ease-in-out items-center">
           <h3>NAMASTE!</h3>
           <Image
-            src="/images/hands.png"
+            src="https://res.cloudinary.com/dhe0y0a7n/image/upload/v1687784638/public/images/hands_atb5ap.png"
             alt="contact-me"
             width={40}
             height={40}
