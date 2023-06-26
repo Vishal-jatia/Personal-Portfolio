@@ -33,7 +33,7 @@ const Nav = () => {
               Home
             </p>
           </Link>
-          <div className="sm:flex gap-1 hidden">
+          <div className="lg:flex gap-1 hidden bg-fixed">
             <Link
               href="/projects"
               className="border rounded-full px-1 flex justify-between items-center cursor-pointer  "
@@ -61,7 +61,7 @@ const Nav = () => {
             </Link>
           </div>
         </div>
-        <div className="sm:hidden flex relative z-50 justify-end">
+        <div className="lg:hidden flex relative z-50 justify-end">
           <button
             className="border rounded-full px-1 flex justify-between items-center mr-3"
             onClick={() => {
@@ -190,7 +190,7 @@ const Nav = () => {
         )}
       </div>
 
-      <div className="mr-5 sm:flex hidden">
+      <div className="mr-5 lg:flex hidden">
         <Link
           href="https://www.instagram.com/v._.i_s_h_a_l/"
           className="border rounded-full p-3 hover:scale-105"
